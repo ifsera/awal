@@ -707,9 +707,31 @@ $('#selectidhere').on("changed.bs.select", function() {
 			if (window.location.href.indexOf("policy") > -1) {
 				$("#divPolicy").show();
 				$("#divAbout").hide();
-				$("#about").css("background-color", "#FFFFFF");
-				$("#about").css("color", "#111");
+				$("#policy").css("background-color", "#FFFFFF");
+				$("#policy").css("color", "#111");
 			}
+
+			if (window.location.href.indexOf("about") > -1) {
+				$("#divAbout").show();
+				$("#divPolicy").hide();
+				$("#about").css("background-color", "#FFFFFF");
+				$("#abouty").css("color", "#111");
+			}
+			if (window.location.href.indexOf("contact") > -1) {
+				$("#divAbout").show();
+				$("#divPolicy").hide();
+				$("#contact").css("background-color", "#FFFFFF");
+				$("#contact").css("color", "#111");
+			}
+			if (window.location.href.indexOf("/#") <= -1) {
+				$("#divAbout").show();
+				$("#divPolicy").hide();
+				$("#about").css("background-color", "#FFFFFF");
+				$("#abouty").css("color", "#111");
+			}
+
+
+
 
 			/*	$("#back").click(function () {
 					serachIlgLevel();
