@@ -704,11 +704,9 @@ $('#selectidhere').on("changed.bs.select", function() {
 		$(document).ready(function () {
 
 
-			if (window.location.href.indexOf("#") == -1) {
-				$("#divPolicy").hide();
-				$("#divSolution").hide();
-				$("#divContact").hide();
-				$("#divAbout").show();
+			if (window.location.href.indexOf("policy") > -1) {
+				$("#divPolicy").show();
+				$("#divAbout").hide();
 				$("#about").css("background-color", "#FFFFFF");
 				$("#about").css("color", "#111");
 			}
