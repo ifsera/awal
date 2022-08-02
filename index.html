@@ -700,12 +700,16 @@ $('#selectidhere').on("changed.bs.select", function() {
 		$('div.wrapper[lang!=' + lang + ']').hide();
 
 		$(window).on('load', function () {
-			$("#divPolicy").hide();
-			$("#divSolution").hide();
-			$("#divContact").hide();
-			$("#divAbout").show();
-			$("#about").css("background-color", "#FFFFFF");
-			$("#about").css("color", "#111");
+			var href = $(this).attr('href');
+			if (href.indexOf("#") > -1) {
+				$("#divPolicy").hide();
+				$("#divSolution").hide();
+				$("#divContact").hide();
+				$("#divAbout").show();
+				$("#about").css("background-color", "#FFFFFF");
+				$("#about").css("color", "#111");
+			}
+
 		});
 
 
