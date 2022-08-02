@@ -699,7 +699,10 @@ $('#selectidhere').on("changed.bs.select", function() {
 		// equal to `lang` and make them invisibile.
 		$('div.wrapper[lang!=' + lang + ']').hide();
 
-		$(window).on('load', function () {
+
+
+		$(document).ready(function () {
+
 
 			if (window.location.href.indexOf("#") > -1) {
 				$("#divPolicy").hide();
@@ -709,11 +712,6 @@ $('#selectidhere').on("changed.bs.select", function() {
 				$("#about").css("background-color", "#FFFFFF");
 				$("#about").css("color", "#111");
 			}
-
-		});
-
-
-		$(document).ready(function () {
 
 			/*	$("#back").click(function () {
 					serachIlgLevel();
