@@ -700,8 +700,8 @@ $('#selectidhere').on("changed.bs.select", function() {
 		$('div.wrapper[lang!=' + lang + ']').hide();
 
 		$(window).on('load', function () {
-			var href = $(this).attr('href');
-			if (href.indexOf("#") > -1) {
+
+			if (window.location.href.indexOf("#") > -1) {
 				$("#divPolicy").hide();
 				$("#divSolution").hide();
 				$("#divContact").hide();
